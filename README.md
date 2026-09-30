@@ -127,7 +127,3 @@ Run the tests with:
 The unit tests cover availability across multiple nights, check-out boundaries, validation, payment and refund failures, and cancellation rules. Concurrency tests check requests competing for the last room, repeated payments and cancellations, and payment happening alongside cancellation.
 
 The REST test starts the app on a random port and runs the full flow: add an owner and property, search, book, pay, cancel, then search again. It also checks error responses. Tests use a fixed clock set to January 1, 2030.
-
-## With more time
-
-The next steps would be to expire unpaid holds, add persistent storage, and make payment retries safe across restarts. Search pagination and OpenAPI documentation would also be useful.
